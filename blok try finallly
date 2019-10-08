@@ -1,0 +1,14 @@
+def main():
+     try:
+    
+        f = open("data.txt","r")
+        try:
+             f.write("pemograman phyton")
+        finally:
+                f.close() # menutup file
+     except IOError:
+        print("\nERROR: file tidak dapat " +
+            "dibuka/ditulis")
+            
+if __name__== "__main__":
+     main()
