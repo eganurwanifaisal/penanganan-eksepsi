@@ -1,0 +1,38 @@
+import math
+
+class AbstractError(RuntimeError):
+    def__init__(self, s):
+         self.s =s
+    
+ class DuaDimensi(object):
+    def__init(self):
+         raise AbstractError("ERROr: " + "DuaDimensi"+"' adalah kelas abstrak")
+    def luas(self):
+        raise NotImplementedError
+     def keliling (self):
+        raise NotImplmentedError
+      
+class lingkaran(DuaDimensi):
+    def__init__(self, r):
+        self.r = r
+    def luas (self):
+        return math.pi * self.r * self.r 
+    def keliling(self):
+         return 2 * marh.pi * self.r
+ def main():
+     objl = lingkaran(3)
+    print("LINGKARAN")
+    print("Luas\t\t:", objl.luas ())
+    print("keliling\t:", objl.keliling ())
+    
+    try:
+      print("\nmembuat objek " + "dari kelas DuaDimensi...")
+      objk2 = DuaDimensi()
+      except AbstracError as error:
+      print(error.s)
+     else:
+        print("DUADIMENSI")
+        print("luas\t\t:",obj2.luas())
+        print("keliling\t:", obj2.keliling())
+ if __name__=="__main__":
+  main()
