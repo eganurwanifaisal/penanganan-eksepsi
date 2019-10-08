@@ -1,0 +1,16 @@
+print("PROGRAM PEMBAGIAN BILANGAN")
+
+a = float(input("masukan a: "))
+b = float(input("masukan b: "))
+
+try:
+    hasil = a / b
+except ZeroDivisionError:
+        print("\nERROR: Nilai b tidak boleh nol")
+else:
+        print("\na : ", a)
+        print("b : ", b)
+        print("a / b = ",hasil)
+if __name__== "__main__":
+    main()
+    
